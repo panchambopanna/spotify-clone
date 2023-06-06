@@ -1,0 +1,26 @@
+.AppLayout{
+    display: grid;
+    gap: var(--gap-primary);
+    margin:8px;
+}
+
+.sidebar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:11;
+}
+
+.main-container{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 11;
+}
+
+.player{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start:11;
+    grid-row-end: 12;
+}

@@ -1,0 +1,142 @@
+/* SideBar.tsx */
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-primary);
+}
+
+.sideNav>*{
+    background-color: var(--body-primary);
+    border-radius: var(--border-primary);
+    padding: 8px 12px;
+}
+
+/* HeaderNav.tsx */
+.headerNav-navItem{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 12px;
+    height: 40px;
+    color: var(--font-secondary);
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+}
+
+.headerNav-navItem:hover, .headerNav-navItem.active{
+    color: var(--font-primary);
+}
+
+.headerNav-navItem>span{
+    font-weight: 600;
+}
+
+/* PlayListNav.tsx */
+.playlistNav{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+    gap: 20px;
+}
+
+.playlistNav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px;
+    color: var(--font-secondary);
+    cursor: pointer;
+}
+
+.playlistNav-header>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: 200ms all ease-in-out;
+}
+
+.playlistNav-header>.fa-icons>.fa-icon{
+    height: 20px;
+    width: 20px;
+    padding:4px;
+}
+
+.playlistNav-header>.fa-icons>.fa-icon:hover{
+    color: var(--font-primary);
+    border-radius: 50%;
+    background-color: var(--background-highlight);
+}
+
+.playlistNav-header>.playlistNav-header__left:hover{
+    color: var(--font-primary);
+}
+
+.playlistNav-tabs{
+    display: flex;
+    justify-content: left;
+    gap:10px;
+}
+
+.playlistNav-tabs>button{
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: var(--font-primary);
+    background-color: #FFFFFF12;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms all ease-in;
+}
+
+.playlistNav-tabs>button:hover{
+    background-color: #FFFFFF12;
+}
+
+.playlistNav-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-secondary)
+}
+
+.playlistNav-search>*{
+    cursor: pointer;
+}
+
+.playlistNav-search>.search{
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    transition: 200ms all ease-in;
+}
+.search.active{
+    background-color: #2a2a2a;
+    border-radius: 12px;
+}
+
+.search>#search-ip{
+    background-color: transparent;
+    padding: 2px;
+    border: none;
+    width: 10rem;
+    transition: 200ms all ease-in-out;
+    color: var(--font-primary);
+}
+.search>#search-ip:focus{
+    outline: none;
+}
+
+.playlistNav-search>.filter{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    transition: 200ms all ease-in;
+}
+
+.playlistNav-search>*:hover{
+    color: var(--font-primary);
+}
